@@ -12,7 +12,7 @@
 <a href="https://arxiv.org/abs/0000.00000"><img src="https://img.shields.io/badge/arXiv-Paper-b31b1b.svg" alt="arXiv Paper"></a>
 </p>
 
-![Overview](_asset/overview.png)
+![Overview](_asset/overview.jpg)
 
 PAC-BENCH is a benchmark pipeline for studying how multi-agent systems collaborate under privacy constraints.
 The repository is organized as a 3-stage workflow:
