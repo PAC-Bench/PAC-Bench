@@ -67,9 +67,13 @@ Output pattern:
 - result/3_memory/<timestamp>/<domain>/memory_<index>.json
 - result/4_constraint/<timestamp>/<domain>/constraint_<index>.json
 
+First move to the ```scenario_generate``` directory.
 ```bash
 cd scenario_generate
+```
 
+Then generate scenarios by following belows.
+```python
 # 1) Domain -> Scenario
 python 1_run_scenario.py \
 	--domain_file domain.json \
@@ -102,9 +106,13 @@ Move into scenario_simulator and run the simulator pipeline in this order.
 3) Run parallel experiments
 4) Stop containers after experiments
 
+First move to the ```scenario_simulator``` directory.
 ```bash
 cd scenario_simulator
+```
 
+Then you can simulate your agents by following belows.
+```python
 # 1) Build image
 bash scripts/build.sh
 
@@ -148,11 +156,12 @@ Evaluator toggles in [evaluation/configs/settings.py](evaluation/configs/setting
 - EVAL_PRIVACY_ENABLED: enable/disable privacy evaluation
 - EVAL_HALLUCINATION_ENABLED: enable/disable hallucination evaluation
 
-Then you can evaluate your experiment results by following belows.
-
+First move to the ```evaluation``` directory.
 ```bash
 cd evaluation
-
+```
+Then evaluate experiment results.
+```python
 python main.py --input input/<folder_name>
 ```
 
